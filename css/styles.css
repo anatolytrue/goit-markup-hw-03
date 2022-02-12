@@ -63,6 +63,7 @@ address {
   padding-top: 24px;
   padding-bottom: 25px;
   width: 1600px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -246,8 +247,11 @@ address {
 .benefits-list {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+
   justify-content: space-between;
+}
+.benefits-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* =====3 section==== */
@@ -303,21 +307,32 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
 /* ====portfolio main==== */
 
-.projects-list-item {
+.projects-list-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.03em;
+
+  padding: 6px 22px 6px 22px;
+
   color: var(--primary-text-color);
 }
 
-.projects-list-item:active,
-.projects-list-item:hover,
-.projects-list-item:focus {
+.projects-list-button:active,
+.projects-list-button:hover,
+.projects-list-button:focus {
   color: var(--main-color);
   background-color: var(--secondary-color);
 }
@@ -336,4 +351,44 @@ address {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--seconary-text-color);
+}
+
+.portfolio-container {
+  display: flex;
+}
+
+.projects-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.projects-container {
+  margin-bottom: 50px;
+}
+
+.portfolio-projects {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.portfolio-projects-item {
+  margin: 15px;
+  flex-flow: calc((100%-90px) / 3);
+}
+
+.portfolio-projects-content {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.portfolio-projects-title {
+  margin-bottom: 4px;
 }
