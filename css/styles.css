@@ -280,8 +280,21 @@ address {
   flex-wrap: wrap;
 }
 
+.team-list-item {
+  background-color: var(--main-color);
+}
+
 .team-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-list-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-list-description {
+  margin-bottom: 30px;
 }
 /* =====footer==== */
 
