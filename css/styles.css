@@ -38,6 +38,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -56,19 +58,20 @@ address {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1600px;
+  width: 100%;
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  width: 1600px;
+  width: 100%;
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
-  display: flex;
+.header a {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -303,6 +306,11 @@ address {
 }
 .logo-studio-footer {
   color: var(--main-color);
+}
+
+.adress-list .link:hover,
+.adress-list .link:focus {
+  color: var(--secondary-color);
 }
 
 .adress-map {
