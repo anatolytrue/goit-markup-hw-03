@@ -58,11 +58,9 @@ address {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 100%;
 }
 
 .header {
-  width: 100%;
   border-bottom: 1px solid #ececec;
 }
 
@@ -84,6 +82,7 @@ address {
 .nav-list {
   display: flex;
   align-items: center;
+  margin-left: 93px;
 }
 
 .nav-list-item:not(:last-child) {
@@ -124,12 +123,12 @@ address {
   color: var(--secondary-color);
 }
 .logo {
+  display: block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 93px;
   color: var(--secondary-color);
 }
 .logo-studio {
@@ -145,6 +144,8 @@ address {
 /* =====START HERO======= */
 .hero {
   background-color: var(--background-footer);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-container {
@@ -180,6 +181,7 @@ address {
   color: var(--main-color);
   background: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-style: hidden;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -194,6 +196,19 @@ address {
 /* ======ENd HERO===== */
 
 /* ==1 SECTION=== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .section-name {
   font-weight: 700;
@@ -239,8 +254,8 @@ address {
 
 /* ===2 SECTION=== */
 
-.section-secondary {
-  background-color: var(--background-section);
+.benefits-section {
+  padding-top: 0;
 }
 
 .benefits {
@@ -258,12 +273,23 @@ address {
 }
 
 /* =====3 section==== */
+
+.section-secondary {
+  background-color: var(--background-section);
+}
+
+.team-list-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-list-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   color: var(--primary-text-color);
 }
 .team-list-description {
@@ -291,18 +317,12 @@ address {
   margin-right: 30px;
 }
 
-.team-list-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.team-list-description {
-  margin-bottom: 30px;
-}
 /* =====footer==== */
 
 .footer {
   background: var(--background-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-studio-footer {
   color: var(--main-color);
@@ -328,9 +348,8 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
+.adress-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer .logo {
@@ -348,6 +367,8 @@ address {
 
   padding: 6px 22px 6px 22px;
 
+  border-style: hidden;
+  border-radius: 4px;
   color: var(--primary-text-color);
 }
 
@@ -374,22 +395,15 @@ address {
   color: var(--seconary-text-color);
 }
 
-.portfolio-container {
-  display: flex;
-}
-
 .projects-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .projects-list-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.projects-container {
-  margin-bottom: 50px;
 }
 
 .portfolio-projects {
